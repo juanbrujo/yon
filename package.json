@@ -5,6 +5,7 @@
   "author": "Yino Cochinu",
   "description": "slackbot para mercevary-front",
   "dependencies": {
+    "cheerio": "^0.20.0",
     "hubot": "^2.19.0",
     "hubot-azar": "^0.1.0",
     "hubot-bellako": "0.0.1",
