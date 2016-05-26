@@ -8,16 +8,21 @@
 //   None
 //
 // Commands:
-//   global|globalinteractive
+//   global|globalinteractive|amauta
 
 var foturris = [
-  'https://pbs.twimg.com/profile_images/565285062292164608/_iG-8Akm.jpeg',
+  'http://www.globalinteractive.cl/wp-content/uploads/2015/11/03.jpg',
   'http://www.globalinteractive.cl/wp-content/uploads/2015/10/Rodrigo-Ureta-260x270.jpg',
-  'https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/7/000/1ef/3a4/026938d.jpg'
+  'http://amddchile.com/web_amdd3/wp-content/uploads/2016/04/ru.jpg',
+  'http://www.globalinteractive.cl/wp-content/uploads/2015/11/02.jpg',
+  'http://www.globalinteractive.cl/wp-content/uploads/2015/11/05.jpg',
+  'http://www.globalinteractive.cl/wp-content/uploads/2015/11/06.jpg',
+  'http://www.globalinteractive.cl/wp-content/uploads/2015/11/07.jpg',
+  'http://negocios.udd.cl/files/2014/08/IMG_0565-300x300.jpg'
 ];
 
 module.exports = function(robot) {
-  robot.hear(/global|globalinteractive/gi, function(res) {
+  robot.hear(/global|globalinteractive|amauta/gi, function(res) {
 
     res.send( foturris[Math.floor(Math.random() * foturris.length)] );
 
