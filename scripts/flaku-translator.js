@@ -13,14 +13,14 @@
 // Author:
 //   @jorgeepunan
 
-var garabatus = ['se me paro el pico','wena care pico','sapoculiao','cómete un pan con pico','chúpalo','sale conchetumare','chupaelpico','tesapoelchupo','carepico','pico','maracaculia','con la punta del pico','esperenme, voy a cambiarme la toallita','micropene','queri un pan con tula CTM','fina la weona tiene hocico de pirata','se me calento el hocico','mande a la mierda al viejo culiao'];
+var garabatus = ['se me paró el pico','wena care pico','sapoculiao','cómete un pan con pico','chúpalo','sale conchetumare','chupaelpico','tesapoelchupo','carepico','pico','maracaculiá','con la punta del pico','espérenme, voy a cambiarme la toallita','micropene','querí un pan con tula CTM','fina la weona tiene hocico de pirata','se me calentó el hocico','mandé a la mierda al viejo culiao'];
 
 function flakuTranslator (string) {
 
   var result  = string.split(" ");
   var replace = [];
   result.forEach( function(word) {
-    replace.push( word.replace(/\o$/, "u") );
+    replace.push( word.replace(/\o$/, "u").replace(/\os$/, "us") );
   });
   return replace.join(" ");
 
