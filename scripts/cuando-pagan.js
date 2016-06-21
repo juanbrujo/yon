@@ -28,7 +28,7 @@ module.exports = function gardel(robot) {
     if (dayCount === 0) {
       message = ':sparkles:  ¡Hoy pagan! :sparkles: ';
     } else {
-      message = `Faltan ${dayCount} días para que paguen. Este mes pagan el ${lastBusinessDay}, que cae ${nameLastDay}. A agantar nomás.`;
+      message = 'Faltan ' + dayCount + ' días para que paguen. Este mes pagan el ' + lastBusinessDay + ', que cae ' + nameLastDay + '. ¡A aguantar!';
     }
     return msg.send(message);
   });
