@@ -28,6 +28,7 @@
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.4.2",
     "moment": "^2.13.0",
+    "moment-business-days": "0.0.10",
     "moment-countdown": "0.0.3",
     "needle": "^1.0.0",
     "string": "^3.3.1"
