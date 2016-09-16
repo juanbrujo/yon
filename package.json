@@ -6,6 +6,7 @@
   "description": "slackbot para mercevary-front",
   "dependencies": {
     "cheerio": "^0.20.0",
+    "cloudscraper": "^1.4.0",
     "hubot": "^2.19.0",
     "hubot-ascii-art": "^1.1.1",
     "hubot-azar": "^0.1.0",
