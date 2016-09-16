@@ -17,10 +17,11 @@ var cloudscraper = require('cloudscraper');
 module.exports = function(robot) {
   robot.respond(/torrent (.*)/i, function(msg) {
 
-    msg.send('Esperando respuesta de Torrent Project... :clock930:');
+    msg.send('Esperando respuesta de Torrent Project... :clock830:');
 
     var busqueda = msg.match[1];
-    var url = 'https://torrentproject.se/?t=' + busqueda.split(' ').join('+');
+    var domain = 'https://torrentproject.se/';
+    var url = domain + '?t=' + busqueda.split(' ').join('+');
 
     cloudscraper.get(url, function(error, response, body) {
       if (error) {
@@ -33,7 +34,7 @@ module.exports = function(robot) {
           var title = $(this).find('a').text();
           var link = $(this).find('a').attr('href');
 
-          resultados.push( title + ' | ' + link );
+          resultados.push( title + ' | ' + domain + link );
         });
 
         if(resultados.length > 0) {
